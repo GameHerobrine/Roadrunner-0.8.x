@@ -100,7 +100,6 @@ Server::Server(uint16_t port, uint32_t max_clients) {
 		signal(SIGINT, &handleSignal);
 	#endif
 
-
 	Server::INSTANCE = this;
 	RoadRunner::world::BlankChunk::blankChunk = new RoadRunner::world::BlankChunk();
 	bool enableTPSFix = false;
