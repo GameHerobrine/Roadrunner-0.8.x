@@ -111,8 +111,7 @@ Server::Server(uint16_t port, uint32_t max_clients) {
 		new ShortProperty("server-port", &port),
 		new UnsignedIntegerProperty("max-clients", &max_clients),
 		new StringProperty("world-seed", &SEEDPROP),
-		new BooleanProperty("is-creative", &IS_CREATIVE),
-		new BooleanProperty("windows-tps-fix", &enableTPSFix)
+		new BooleanProperty("is-creative", &IS_CREATIVE)
 	};
 	size_t sizeProperties = sizeof(properties) / sizeof(properties[0]);
 	Properties props("server.properties", sizeProperties, properties);
