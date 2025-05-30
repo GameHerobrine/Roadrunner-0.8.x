@@ -5,7 +5,6 @@
 #include <network/packets/chat_packet.hpp>
 #include <network/packets/update_block_packet.hpp>
 #include <server.hpp>
-#include "world/perlin.hpp"
 #include "block/block.hpp"
 #include <chrono>
 #include <thread>
